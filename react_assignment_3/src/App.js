@@ -35,7 +35,7 @@ function App() {
           <Route path='/Registration' element={<Registration />}></Route>
           <Route path='/Add_hotel' element={<Add_hotel />}></Route>
           <Route path='/Existing_hotels' element={<Existing_hotels />}></Route>
-          <Route path='/Update_hotel_details' element={<Update_hotel_details />}></Route>
+          <Route path='/Update_hotel_details/:hotelId' element={<Update_hotel_details />}></Route>
           <Route path='/List_of_bookings' element={<List_of_bookings />}></Route>
           <Route path='/Cancelled_bookings' element={<Cancelled_bookings/>}> path</Route>
           <Route path='/List_of_users' element={<List_of_Users />}></Route>

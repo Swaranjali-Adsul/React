@@ -26,7 +26,7 @@ const Navbar = () => {
           <Link className="nav-link" to="/existing_hotels">Existing Hotels</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/Update_hotel_details">Update Hotel Details</Link>
+          <Link className="nav-link" to="/Update_hotel_details/hotelId">Update Hotel Details</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/List_of_bookings">Bookings</Link>

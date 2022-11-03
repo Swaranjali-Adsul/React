@@ -1,7 +1,9 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 import {showHotels} from '../features/hotels/hotelSlice'
 import Navbar from './Navbar'
+
 const Existing_hotels = () => {
     const hotels=useSelector(showHotels)
     console.log(hotels)
@@ -18,6 +20,7 @@ const Existing_hotels = () => {
             <th>Location</th>
             <th>Tables</th>
             <th>Contact</th>
+            <th>Action</th>
         </tr>
       </thead>
       <tbody>
@@ -29,6 +32,9 @@ const Existing_hotels = () => {
             <td>{value.location}</td>
             <td>{value.tables}</td>
             <td>{value.contact}</td>
+            <td>
+              <Link to={`/Update_hotel_details/${value.id}`}>Update hotel details</Link>
+            </td>
             
         </tr>
         )
