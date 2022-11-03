@@ -30,6 +30,7 @@ console.log("hotelData"+hotelData)
                   <th>Location</th>
                   <th>Tables</th>
                   <th>Contact</th>
+                  <th>Booking Link</th>
                 </tr>
               </thead>
               <tbody>
@@ -40,7 +41,9 @@ console.log("hotelData"+hotelData)
             <td>{hotelData.location}</td>
             <td>{hotelData.tables}</td>
             <td>{hotelData.contact}</td>
-            
+            <td>
+            <Link to={`/Book_hotel/${hotelData.id}`}>Book Now..!!</Link>
+            </td>
             
         </tr>
         
