@@ -28,6 +28,7 @@ const Navbar = () => {
         <li className="nav-item">
           <Link className="nav-link" to="/Update_hotel_details/hotelId">Update Hotel Details</Link>
         </li>
+        
         <li className="nav-item">
           <Link className="nav-link" to="/List_of_bookings">Bookings</Link>
         </li>

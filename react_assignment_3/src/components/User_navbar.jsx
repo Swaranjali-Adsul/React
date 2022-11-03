@@ -19,8 +19,9 @@ const User_navbar = () => {
         
         
         
+        
         <li className="nav-item">
-          <Link className="nav-link" to="/User_hotels">List of Hotels</Link>
+          <Link className="nav-link" to="/Hotel_details">Hotel Details</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/List_of_bookings">Bookings</Link>
