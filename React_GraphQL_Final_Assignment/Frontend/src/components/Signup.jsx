@@ -69,12 +69,20 @@ const Signup = () => {
         }
     }).then((response)=>
     {
-       
-        const newuser=response.data.data.signup
-        setUser(newuser)
+        if(user.password===user.confirmpassword)
+        {
+         const newuser=response.data.data.signup
+         setUser(newuser)
+         
+             window.alert('You Registered succesfully')
+             navigate('/signin')
+        }
+        else
+        {
         
-            window.alert('You Registered succesfully')
-            navigate('/signin')
+         window.alert('password and confirm password not same')
+ 
+        }
 
         
        
